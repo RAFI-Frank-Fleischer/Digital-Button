@@ -3,15 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-	<link rel="manifest" href="manifest.json">
-    <title>Digital Buttons</title>
+    <title>Zentrierte Buttons</title>
+    <link rel="manifest" href="manifest.json">
     <style>
         body {
             background-color: #000000;
             display: flex;
             justify-content: center;
             align-items: center;
-            min-height: 100vh;
+            height: 100vh;
             margin: 0;
             padding: 0;
             box-sizing: border-box;
@@ -35,7 +35,8 @@
             border: none;
             cursor: pointer;
             outline: none;
-            -webkit-tap-highlight-color: transparent; /* Verhindert graue Fläche beim Berühren */
+            -webkit-tap-highlight-color: transparent;
+            touch-action: manipulation;
         }
         .button:active {
             background-color: red;
@@ -44,12 +45,12 @@
 </head>
 <body>
     <div class="container">
-        <button class="button" onclick="this.style.backgroundColor = 'red'">1</button>
-        <button class="button" onclick="this.style.backgroundColor = 'red'">2</button>
-        <button class="button" onclick="this.style.backgroundColor = 'red'">3</button>
-        <button class="button" onclick="this.style.backgroundColor = 'red'">4</button>
-        <button class="button" onclick="this.style.backgroundColor = 'red'">5</button>
-        <button class="button" onclick="this.style.backgroundColor = 'red'">6</button>
+        <button class="button" ontouchend="this.style.backgroundColor = '#000000'">1</button>
+        <button class="button" ontouchend="this.style.backgroundColor = '#000000'">2</button>
+        <button class="button" ontouchend="this.style.backgroundColor = '#000000'">3</button>
+        <button class="button" ontouchend="this.style.backgroundColor = '#000000'">4</button>
+        <button class="button" ontouchend="this.style.backgroundColor = '#000000'">5</button>
+        <button class="button" ontouchend="this.style.backgroundColor = '#000000'">6</button>
     </div>
 </body>
 </html>
