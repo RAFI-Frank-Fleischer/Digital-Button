@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 	<link rel="manifest" href="manifest.json">
-    <title>iPhone 13 Button Layout</title>
+    <title>Digital Buttons</title>
     <style>
         body {
             background-color: #000000;
@@ -13,6 +13,8 @@
             align-items: center;
             min-height: 100vh;
             margin: 0;
+            padding: 0;
+            box-sizing: border-box;
         }
         .container {
             display: grid;
@@ -32,6 +34,8 @@
             align-items: center;
             border: none;
             cursor: pointer;
+            outline: none;
+            -webkit-tap-highlight-color: transparent; /* Verhindert graue Fläche beim Berühren */
         }
         .button:active {
             background-color: red;
@@ -40,12 +44,12 @@
 </head>
 <body>
     <div class="container">
-        <button class="button">1</button>
-        <button class="button">2</button>
-        <button class="button">3</button>
-        <button class="button">4</button>
-        <button class="button">5</button>
-        <button class="button">6</button>
+        <button class="button" onclick="this.style.backgroundColor = 'red'">1</button>
+        <button class="button" onclick="this.style.backgroundColor = 'red'">2</button>
+        <button class="button" onclick="this.style.backgroundColor = 'red'">3</button>
+        <button class="button" onclick="this.style.backgroundColor = 'red'">4</button>
+        <button class="button" onclick="this.style.backgroundColor = 'red'">5</button>
+        <button class="button" onclick="this.style.backgroundColor = 'red'">6</button>
     </div>
 </body>
 </html>
