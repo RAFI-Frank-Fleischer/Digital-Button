@@ -36,9 +36,10 @@
             border: none;
             cursor: pointer;
             outline: none;
-            -webkit-tap-highlight-color: transparent;
+            -webkit-tap-highlight-color: transparent; /* Entfernt die Tap-Hervorhebung */
             touch-action: manipulation;
             user-select: none; /* Verhindert das Markieren des Textes */
+            -webkit-user-select: none; /* Verhindert Markierung auf Webkit-Browsern */
         }
         .button:active {
             background-color: red;
