@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-    <title>Digital Buttons</title>
+    <title>Zentrierte Buttons</title>
     <link rel="manifest" href="manifest.json">
     <style>
         body {
@@ -18,17 +18,17 @@
         }
         .container {
             display: grid;
-            grid-template-columns: repeat(2, 2cm);
-            grid-template-rows: repeat(3, 2cm);
-            gap: 3.5cm;
+            grid-template-columns: repeat(2, 15vw); /* Breite der Buttons angepasst */
+            grid-template-rows: repeat(3, 15vw); /* Höhe der Buttons angepasst */
+            gap: 5vw; /* Abstand zwischen den Buttons */
         }
         .button {
-            width: 2cm;
-            height: 2cm;
-            border-radius: 50%; /* Stellt sicher, dass die Buttons rund sind */
+            width: 15vw; /* Breite in vw */
+            height: 15vw; /* Höhe in vw, um die Rundheit sicherzustellen */
+            border-radius: 50%; /* Rund */
             background-color: #000000;
             color: #FFFFFF;
-            font-size: 1.5cm;
+            font-size: 5vw; /* Schriftgröße relativ zur Button-Größe */
             display: flex;
             justify-content: center;
             align-items: center;
